@@ -1,0 +1,21 @@
+﻿body {
+    margin:0;
+}
+
+.upper-ph{
+    padding: 35px;
+    border-bottom: 1px solid #ccc;
+}
+
+.btn {
+    min-height:40px;
+}
+
+.grid {
+    margin-top:20px;
+    display:none;
+}
+
+.token{
+    float:right;
+}

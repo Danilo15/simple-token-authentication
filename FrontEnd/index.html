@@ -1,0 +1,28 @@
+﻿<!DOCTYPE html>
+<html ng-app="app">
+<head>
+    <title>Sistran Test - Single Page Application</title>
+    <link href="/css/ui-grid.css?_=13231" rel="stylesheet" />
+    <link href="/css/main.css?_=32131" rel="stylesheet" />
+	<meta charset="utf-8" />
+</head>
+<body ng-controller="Main as vm">
+    <div class="upper-ph">
+        <button class="btn btn-gerar-token" ng-click="gerarToken()">Gerar Token</button>
+
+        <p class="token">Token: <span>{{token}}</span><br />
+        <span>{{expire}}</span></p>
+    </div>
+    <div style="margin: 35px;">
+        <button class="btn btn-buscar-produtos-mvc" ng-click="buscarProdutosMVC()">Buscar Produtos MVC</button>
+        <button class="btn btn-buscar-produtos-mvc" ng-click="buscarProdutosAJAX()">Buscar Produtos Ajax</button>
+        <div id="grid1" ui-grid="{ data: products }" class="grid"></div>
+    </div>
+
+    <script src="Scripts/jquery-3.2.1.min.js"></script>
+    <script src="Scripts/angular.min.js"></script>
+    <script src="Scripts/ui-grid.min.js"></script>
+    <script src="app/app.module.js"></script>
+    <script src="app/main.js"></script>
+</body>
+</html>
